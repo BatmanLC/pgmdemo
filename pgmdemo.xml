@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="comment_comment" id="358" x="141" y="-525">
-    <field name="TEXT">uuudddlllrrrdduuuu</field>
+    <field name="TEXT">uuuuuuuuuuuuuuuu</field>
     <next>
       <block type="robot_delay" id="369" inline="true">
         <value name="DELAY">
