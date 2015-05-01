@@ -1,26 +1,34 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="506" x="61" y="-577">
-    <field name="TEXT">uuurrrllldddldru</field>
-    <next>
-      <block type="oled_drawnumber" id="504" inline="true">
-        <value name="NUMBER">
-          <block type="sensor_spectrometer" id="495">
-            <field name="LIGHT">BLUE</field>
+  <block type="procedures_defnoreturn" id="568" x="-29" y="-289">
+    <mutation></mutation>
+    <field name="NAME">subroutineName</field>
+    <statement name="STACK">
+      <block type="oled_setcursor" id="577" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="584">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="591">
+            <field name="NUM">0</field>
           </block>
         </value>
         <next>
-          <block type="robot_delay" id="508" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="515">
-                <field name="NUM">500</field>
-              </block>
-            </value>
+          <block type="oled_drawtext" id="552">
+            <field name="TEXT">blue=</field>
             <next>
-              <block type="movement_stop" id="525"></block>
+              <block type="oled_drawnumber" id="504" inline="true">
+                <value name="NUMBER">
+                  <block type="sensor_spectrometer" id="495">
+                    <field name="LIGHT">BLUE</field>
+                  </block>
+                </value>
+              </block>
             </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
