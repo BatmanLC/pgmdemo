@@ -1,52 +1,22 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="358" x="141" y="-525">
-    <field name="TEXT">uuuuuuuuuuuuuuuu</field>
+  <block type="comment_comment" id="506" x="61" y="-577">
+    <field name="TEXT">uuurrrllldddldru</field>
     <next>
-      <block type="robot_delay" id="369" inline="true">
+      <block type="robot_delay" id="508" inline="true">
         <value name="DELAY">
-          <block type="math_number" id="407">
-            <field name="NUM">500</field>
+          <block type="math_number" id="515">
+            <field name="NUM">3000</field>
           </block>
         </value>
         <next>
-          <block type="movement_forward" id="431">
-            <next>
-              <block type="robot_delay" id="381" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="414">
-                    <field name="NUM">500</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_reverse" id="441">
-                    <next>
-                      <block type="robot_delay" id="393" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="421">
-                            <field name="NUM">500</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="movement_right" id="451">
-                            <next>
-                              <block type="robot_delay" id="453" inline="true">
-                                <value name="DELAY">
-                                  <block type="math_number" id="470">
-                                    <field name="NUM">3000</field>
-                                  </block>
-                                </value>
-                                <next>
-                                  <block type="movement_stop" id="480"></block>
-                                </next>
-                              </block>
-                            </next>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
+          <block type="oled_drawnumber" id="504" inline="true">
+            <value name="NUMBER">
+              <block type="sensor_spectrometer" id="495">
+                <field name="LIGHT">BLUE</field>
               </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="525"></block>
             </next>
           </block>
         </next>
