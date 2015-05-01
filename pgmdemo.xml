@@ -2,17 +2,17 @@
   <block type="comment_comment" id="506" x="61" y="-577">
     <field name="TEXT">uuurrrllldddldru</field>
     <next>
-      <block type="robot_delay" id="508" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="515">
-            <field name="NUM">3000</field>
+      <block type="oled_drawnumber" id="504" inline="true">
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="495">
+            <field name="LIGHT">BLUE</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawnumber" id="504" inline="true">
-            <value name="NUMBER">
-              <block type="sensor_spectrometer" id="495">
-                <field name="LIGHT">BLUE</field>
+          <block type="robot_delay" id="508" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="515">
+                <field name="NUM">3000</field>
               </block>
             </value>
             <next>
